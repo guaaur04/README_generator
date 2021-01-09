@@ -16,50 +16,63 @@
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require ('fs');
+const fs = require('fs');
 
-inquirer 
-.prompt([ 
-    {
-    type: 'input',
-    name: 'title',
-    message: 'What is your project title?',
-        }, 
-
-    {
-        type: 'input',
-        name: 'description',
-        message: 'What is your project about?',
-        }, 
-
-    {
-        type: 'input',
-        name: 'technologies',
-        message: 'What technologies did you use?',
-        }, 
-
+inquirer
+    .prompt([
+        // Enter my project title
         {
             type: 'input',
-            name: 'technologies',
-            message: 'What technologies did you use?',
-            }, 
+            name: 'title',
+            message: 'What is your project title?',
+        },
 
-            {
-                type: 'input',
-                name: 'technologies',
-                message: 'What technologies did you use?',
-                }, 
+        // Enter a description
+        {
+            type: 'input',
+            name: 'description',
+            message: 'What is your project description?',
+        },
 
-])
+        //Enter installation instructions
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the installation instructions?',
+        },
+
+        //Enter usage information 
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'How do you use this application?',
+        },
+
+        //Enter contribution guidelines
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'What are the contribution guidelines for this project?',
+        },
+
+        //Enter test instructions 
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What are the test instructions for this application?',
+        },
+
+
+    ])
 
 // TODO: Create an array of questions for user input
 const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();
