@@ -75,7 +75,7 @@ inquirer
     // A function to write README file
 function writeToFile(fileName, data) {
     fileName = 'readme.md'
-    fs.writeFile(`${response.name}.md`, generateMarkdown(data), err => {
+    fs.writeFile(fileName, generateMarkdown(data), err => {
         if (err) {
             console.log(err);
         } else {
@@ -83,12 +83,3 @@ function writeToFile(fileName, data) {
         }
     })
 }
-    // // Function to initialize application
-    // function init() {
-    //     inquirer.prompt(inputs)
-    //     .then 
-
-    // }
-
-    //This calls the application
-    init();

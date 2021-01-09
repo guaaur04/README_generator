@@ -1,6 +1,4 @@
 # README_generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ##Description
 This node application allows the user to create automated READMEs, helpful in streamlining the setup process. The result? You save some time. 
 
@@ -16,17 +14,22 @@ This node application allows the user to create automated READMEs, helpful in st
 
 
 ##Installation
-In order to use ........ 
+To install, git clone this repository. 
+Next, type npm init into your terminal. 
+
+##Usage
+Go HAM. You can run this application by typing node index.js into terminal. 
 
 ##Screnshots
 
-
-##Usage
-Go HAM. 
-
+ 
+ ##Questions
+ Github: guaaur04
+ 
 ##License
-(https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-##Questions
+
+
 
