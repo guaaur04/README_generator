@@ -72,14 +72,23 @@ inquirer
 
     ])
 
-    // A function to write README file
-function writeToFile(fileName, data) {
-    fileName = 'readme.md'
-    fs.writeFile(fileName, generateMarkdown(data), err => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("Your README has been created!")
-        }
-    })
+
+// A function to write README file
+function writeToFile(fileName, questions) {
+    fileName = `readme.md`
+    fs.writeFile(fileName, questions, err =>
+        err ? console.error(err) : console.log('Your README file has been created!')
+    )
 }
+
+
+function init() {
+    inquirer.prompt(inputs)
+        .then((response) => {
+            const markdown = generateMarkdown(response)
+            writeToFile(`readme.md`, markdown), err =>
+                err ? console.error(err) : console.log('Your README file has been created?')
+        });
+}
+// Function call to initialize app
+init();
