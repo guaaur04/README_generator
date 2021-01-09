@@ -1,6 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
 
 // Array of questions for user input
 inquirer
@@ -72,61 +73,22 @@ inquirer
     ])
 
     // A function to write README file
-    .then((response) => {
-        const markdownOutput =
-            `#Project Title
-        ${response.title}
-        
-        ##Description
-        ${response.description}
-        
-        ##Table of Contents
-        
-        * [Installation] (#installation)
-        * [Usage] (#usage)
-        * [License] (#license)
-        * [Contributing] (#contribution)
-        * [Tests] (#tests)
-        * [Questions] (#questions)
-        
-        
-        ##Installation
-        ${response.installation}
-
-        ##Usage
-        ${response.usage}
-        
-        ##License
-        ${response.license}
-        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
-        ##Contributing
-        ${response.contribution}
-        
-        ##Tests
-        ${response.test}
-
-        ##Questions
-        ${response.username}
-        ${response.email}`
-    })
-
 function writeToFile(fileName, data) {
     fileName = 'readme.md'
-    fs.writeFile(`${response.name}.md`, markdownOutput, err => {
+    fs.writeFile(`${response.name}.md`, generateMarkdown(data), err => {
         if (err) {
             console.log(err);
         } else {
             console.log("Your README has been created!")
         }
     })
+}
+    // // Function to initialize application
+    // function init() {
+    //     inquirer.prompt(inputs)
+    //     .then 
 
-    // Function to initialize application
-    function init() {
-        inquirer.prompt(inputs)
-
-    }
+    // }
 
     //This calls the application
     init();
