@@ -12,21 +12,25 @@ This node application aims to help user create automated README files.
 * [Questions] (#Questions)
 
 
-#Installation
+**Installation**
+
 To install, git clone this repository. 
 Next, type npm init into your terminal. 
 
 **Usage**
+
 You can run this application by typing node index.js into terminal. 
 You will encounter errors. 
 Updated version featuring absolutely no errors, coming soon. 
 
  
 **Questions**
+
  Github: guaaur04 
  [Github](https://www.github.com/guaaur04)
  
 **License**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 (https://opensource.org/licenses/MIT)
 
