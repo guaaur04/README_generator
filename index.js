@@ -62,8 +62,68 @@ inquirer
             message: 'What are the test instructions for this application?',
         },
 
+        //Enter questions 
+        {
+            type: 'input',
+            name: 'question',
+            message: 'Do you have questions you want to include in your file?',
+        },
+
+        // Choose a license for my application from a list of options
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'Select a license option:',
+            choices: ['MIT','GNU General Public License v3.0','Creative Commons'],
+        },
+
+        //Enter GitHub username
+        {
+            type: 'input',
+            name: 'username',
+            message: 'What is your Github username?',
+        },
+
+        // WHEN I enter my email address
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+        },
 
     ])
+
+
+    .then((response) => {
+        const readmeOutput = `# README_generator
+
+        #Project Title
+        
+        ##Description
+        
+        
+        ##Table of Contents
+        
+        *Installation
+        *Usage
+        *License
+        *Contributing
+        *Tests
+        *Questions
+        
+        
+        ##Installation
+        
+        ##Usage
+        
+        ##License
+        
+        ##Contributing
+        
+        ##Tests
+        
+        ##Questions`
+    
 
 // TODO: Create an array of questions for user input
 const questions = [];
