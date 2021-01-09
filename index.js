@@ -14,10 +14,11 @@
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Array of questions for user input
 inquirer
     .prompt([
         // Enter my project title
@@ -62,13 +63,6 @@ inquirer
             message: 'What are the test instructions for this application?',
         },
 
-        //Enter questions 
-        {
-            type: 'input',
-            name: 'question',
-            message: 'Do you have questions you want to include in your file?',
-        },
-
         // Choose a license for my application from a list of options
         {
             type: 'checkbox',
@@ -93,46 +87,52 @@ inquirer
 
     ])
 
-
+    // A function to write README file
     .then((response) => {
-        const readmeOutput = `# README_generator
-
-        #Project Title
+        const readmeOutput = 
+        `#Project Title
+        ${response.title}
         
         ##Description
-        
+        ${response.description}
         
         ##Table of Contents
         
-        *Installation
-        *Usage
-        *License
-        *Contributing
-        *Tests
-        *Questions
+        * [Installation] (#installation)
+        * [Usage] (#usage)
+        * [License] (#license)
+        * [Contributing] (#contribution)
+        * [Tests] (#tests)
+        * [Questions] (#questions)
         
         
         ##Installation
-        
+        ${response.installation}
+
         ##Usage
+        ${response.usage}
         
         ##License
-        
+        ${response.license}
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
         ##Contributing
+        ${response.contribution}
         
         ##Tests
-        
-        ##Questions`
-    
+        ${response.test}
 
-// TODO: Create an array of questions for user input
-const questions = [];
+        ##Questions
+        ${response.username}
+        ${response.email}`
+    }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
 
-// TODO: Create a function to initialize app
+
+
+// Function to initialize application
 function init() { }
 
-// Function call to initialize app
+// Function call to initialize application
 init();
