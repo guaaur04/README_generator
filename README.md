@@ -1,15 +1,15 @@
 # README_generator
 **Description**
-This node application allows the user to create automated READMEs, helpful in streamlining the setup process. The result? You save some time. 
+This node application aims to help user create automated README files. 
 
 **Table of Contents**
 
-* [Installation] (#installation)
-* [Usage] (#usage)
-* [License] (#license)
-* [Contributing] (#contribution)
-* [Tests] (#tests)
-* [Questions] (#questions)
+* [Installation] (#Installation)
+* [Usage] (#Usage)
+* [License] (#License)
+* [Contributing] (#Contribution)
+* [Tests] (#Tests)
+* [Questions] (#Questions)
 
 
 **Installation**
