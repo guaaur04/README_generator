@@ -1,0 +1,22 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guaaur04/README_generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guaaur04/README_generator/issues"
+  },
+  "homepage": "https://github.com/guaaur04/README_generator#readme"
+}
