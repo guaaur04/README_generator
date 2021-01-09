@@ -15,6 +15,42 @@
 // THEN I am taken to the corresponding section of the README
 
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require ('fs');
+
+inquirer 
+.prompt([ 
+    {
+    type: 'input',
+    name: 'title',
+    message: 'What is your project title?',
+        }, 
+
+    {
+        type: 'input',
+        name: 'description',
+        message: 'What is your project about?',
+        }, 
+
+    {
+        type: 'input',
+        name: 'technologies',
+        message: 'What technologies did you use?',
+        }, 
+
+        {
+            type: 'input',
+            name: 'technologies',
+            message: 'What technologies did you use?',
+            }, 
+
+            {
+                type: 'input',
+                name: 'technologies',
+                message: 'What technologies did you use?',
+                }, 
+
+])
 
 // TODO: Create an array of questions for user input
 const questions = [];
