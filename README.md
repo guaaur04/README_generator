@@ -12,7 +12,7 @@ This node application aims to help user create automated README files.
 * [Questions] (#Questions)
 
 
-**Installation**
+#Installation
 To install, git clone this repository. 
 Next, type npm init into your terminal. 
 
@@ -22,7 +22,7 @@ You will encounter errors.
 Updated version featuring absolutely no errors, coming soon. 
 
  
- **Questions**
+**Questions**
  Github: guaaur04 
  [Github](https://www.github.com/guaaur04)
  
