@@ -10,8 +10,8 @@
 
 //Function to generate markdown for README
 
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(response) {
+  return `
 
 #Project Title
 ${response.title}
@@ -48,7 +48,7 @@ ${response.test}
 
 ##Questions
 ${response.username}
-${response.email}`;
+${response.email}`
 }
 
 module.exports = generateMarkdown;
