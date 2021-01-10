@@ -73,17 +73,58 @@ inquirer
 
     ])
 
+    //Function to generate markdown for README
+    .then((data) => {
+        const filename = "README.md";
+        const generateMarkdown =`
+        
+        #Project Title
+        ${data.title}
+        
+        ##Description
+        ${data.description}
+        
+        ##Table of Contents
+        
+        * [Installation] (##Installation)
+        * [Usage] (##Usage)
+        * [License] (##License)
+        * [Contributing] (##Contribution)
+        * [Tests] (##Tests)
+        * [Questions] (##Questions)
+        
+        
+        ##Installation
+        ${data.installation}
+        
+        ##Usage
+        ${data.usage}
+        
+        ##License
+        ${data.license}
+        [![License: MIT](https://img.shields.io/badge/License-$(response.license}yellow.svg)](https://opensource.org/licenses/MIT)
+        
+        
+        ##Contributing
+        ${data.contribution}
+        
+        ##Tests
+        ${data.test}
+        
+        ##Questions
+        ${data.username}
+        ${data.email}`
+
 
 // A function to write README file
-then(function (response) {
-    fs.writeFile("README.md", generateMarkdown(response), function (err) {
-        if (err) {
-            console.log("Error. Try again.");
-        }
+    fs.writeFile(filename, (generateMarkdown), (err) => {
+            if (err) {
+                console.log("Error. Try again.");
+            }
 
-        else {
-            console.log("You've successfully created a README file.");
-        }
+            else {
+                console.log("You've successfully created a README file.");
+            }
 
-    })
-});
+        })
+;})
