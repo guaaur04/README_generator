@@ -75,7 +75,7 @@ inquirer
 
     //Function to generate markdown for README
     .then((data) => {
-        const filename = "README.md";
+        const filename = "newREADME.md";
         const generateMarkdown =`
         
         #Project Title
