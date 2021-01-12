@@ -102,8 +102,6 @@ inquirer
         
         ##License
         ${data.license}
-        [![License: MIT](https://img.shields.io/badge/License-$(response.license}yellow.svg)](https://opensource.org/licenses/MIT)
-        
         
         ##Contributing
         ${data.contribution}
